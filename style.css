@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "new-york";
+  src: url("/fonts/NewYork PERSONAL USE.otf");
+}
+.font-display {
+  font-family: "new-york";
+}
+
+.image-hover {
+  transition: all 2s ease-in-out;
+}
+.image-hover:hover {
+  transform: scale(1.4);
+}/*# sourceMappingURL=style.css.map */
