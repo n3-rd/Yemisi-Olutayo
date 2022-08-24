@@ -3,6 +3,8 @@ import {gsap} from "gsap";
 import "splitting/dist/splitting.css";
 import "splitting/dist/splitting-cells.css";
 import Splitting from "splitting";
+import imagesLoaded from "imagesloaded";
+
 
 Splitting();
 
@@ -47,11 +49,13 @@ const showPageAnimations = () =>{
   })
 }
 
+imagesLoaded( document.querySelector('body'), function() {
+  const enterBtn = document.querySelector(".enter-btn");
+  enterBtn.addEventListener("click", ()=>{
+    showMainAnimations()
+  showPageAnimations()
+  })
+});
 
-const enterBtn = document.querySelector(".enter-btn");
-enterBtn.addEventListener("click", ()=>{
-  showMainAnimations()
-showPageAnimations()
 
-})
 // enterBtn.addEventListener("click", showMainAnimations());
