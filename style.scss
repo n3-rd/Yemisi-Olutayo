@@ -16,3 +16,17 @@
         transform: scale(1.4);
     }
 }
+.enter-btn{
+    // center on the screen
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // center on the screen
+}
+a{
+    color:
+    // tailwind orange 500
+    #F9731C;
+    ;
+}
